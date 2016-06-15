@@ -1,0 +1,37 @@
+{
+  "name": "schedule-callback-example",
+  "version": "0.0.1",
+  "description": "This repo contains a simple example service that will authenticate into PureCloud and make the appropriate api calls to schedule a callback.  In addition to the service, this repo contains a simple example client demonstrating how to wire up a minimal UI to interact with the service.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MyPureCloud/schedule-callback-example.git"
+  },
+  "keywords": [
+    "schedule",
+    "callback",
+    "schedule-callback",
+    "scheduleCallback",
+    "PureCloud",
+    "inin",
+    "InteractiveIntelligence"
+  ],
+  "author": "Luke May",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "jquery": "^3.0.0",
+    "lodash": "^4.13.1",
+    "request": "^2.72.0",
+    "restify": "^4.1.0"
+  },
+  "devDependencies": {
+    "gulp-connect": "^4.0.0",
+    "gulp-watch": "^4.3.6"
+  }
+}

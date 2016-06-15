@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Client</title>
+        <!-- Application Styles -->
+        <link rel="stylesheet" type="text/css" href="app.css">
+        <!-- External JavaScript Dependencies -->
+        <script type="text/javascript" src="bower_components/lodash/dist/lodash.js"></script>
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="bower_components/bluebird/js/browser/bluebird.js"></script>
+        <!-- Custom Utilities -->
+        <script type="text/javascript" src="util/RestApi.js"></script>
+        <script type="text/javascript" src="widgets/ScheduleCallbackWidget.js"></script>
+    </head>
+    <body class="app">
+        <div class="header-nav">
+            <div class="header-nav-content">
+                <div class="header-nav-ctls-1">
+                    <div class="header-nav-btn">
+                        <span class="header-nav-txt">
+                            Home
+                        </span>
+                    </div>
+                    <div class="header-nav-btn">
+                        <span class="header-nav-txt">
+                            Products
+                        </span>
+                    </div>
+                    <div class="header-nav-btn">
+                        <span class="header-nav-txt">
+                            About
+                        </span>
+                    </div>
+                    <div class="header-nav-btn">
+                        <span class="header-nav-txt">
+                            Contact Us
+                        </span>
+                    </div>
+                </div>
+                <div class="header-nav-ctls-2">
+                    <div class="header-nav-callback-ctls">
+
+
+                        <!-- HTML Widget to schedule a callback via PureCloud -->
+                        <div class="sch-cbk-widget">
+                            Have Us Call You!
+                        </div>
+                        <!-- END Widget -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-logo">
+            <div class="header-logo-content">
+                <img class="logo" src="logo.svg"/>
+                <h1 class="logo-slogan">
+                    Make a Better World
+                </h1>
+            </div>
+        </div>
+
+        <div class="page-body">
+            <div class="page-body-content">
+
+                <p>
+                <img class="img-left" src="https://placekitten.com/g/250/350"/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae arcu arcu. Integer ac semper quam. Pellentesque quis purus sodales, sagittis sapien at, elementum nisi. Nullam nec neque nulla. Fusce ornare ut nulla vel suscipit. Morbi fringilla eu tellus at pellentesque. Phasellus ultrices volutpat dui vitae convallis. Phasellus fermentum interdum vehicula. Praesent sit amet risus elementum turpis condimentum tempor. Nulla facilisi. Etiam sed venenatis turpis. Etiam nec gravida purus.
+                </p>
+                <p>
+                Fusce lobortis orci et nulla mattis rhoncus. Nunc scelerisque ultrices nulla, vitae mollis mauris mattis at. Aliquam pharetra porttitor pretium. Sed facilisis massa ac nunc condimentum laoreet. Vestibulum aliquet tellus lorem, in semper nisl accumsan quis. Ut euismod lorem at sem dignissim, sit amet sodales metus elementum. Phasellus dignissim aliquet odio. Suspendisse erat nunc, rhoncus viverra eleifend a, sodales ut arcu. Nullam vitae <img class="img-right" src="https://placekitten.com/g/160/120"/>turpis orci. Aliquam erat volutpat. Duis nec pellentesque sapien. Aliquam at tempor tortor. Nullam ornare nisi nec placerat lacinia. Nullam sit amet interdum metus. Mauris quis sollicitudin orci, in eleifend est.
+                </p>
+                <p>
+                Donec ultrices libero rutrum, gravida purus sed, tristique neque. Nulla porttitor ultricies quam, non tempus dui. Etiam quis mauris ac ipsum porttitor varius. Donec et augue in elit sollicitudin euismod. Quisque facilisis, neque ac posuere facilisis, urna tellus porttitor tortor, vitae pulvinar orci nisl ac orci. Aenean mattis eu purus non ullamcorper. Nam non condimentum odio. Etiam eu commodo justo, in vulputate nisi. Aenean tristique lacus a suscipit sollicitudin. Pellentesque elit arcu, lacinia a augue eu, suscipit sagittis ex. Nunc odio dolor, molestie nec massa id, varius euismod ante. Cras blandit scelerisque urna, eget tristique metus bibendum sit amet. Aenean vel mauris ex.
+                </p>
+                <p>
+                Sed viverra orci in arcu venenatis ultrices. Morbi egestas lorem quam, non mollis justo aliquam vitae. Donec ullamcorper bibendum accumsan. Ut vitae massa vitae leo semper suscipit. Nullam vel vestibulum elit. Mauris quis odio condimentum, gravida sapien eu, molestie lacus. Etiam ut sollicitudin leo, a molestie nisl. Phasellus at nisi et urna imperdiet tristique. In laoreet facilisis sapien, vitae convallis libero dapibus vitae. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer gravida purus elit, non commodo enim commodo eu. Vestibulum vitae neque arcu. Suspendisse potenti. Suspendisse sit amet commodo justo, sit amet molestie turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<img class="img-right" src="https://placekitten.com/g/180/250"/>
+                </p>
+                <p>
+                Vestibulum et mi finibus, pharetra nulla id, consectetur arcu. Duis in mollis ligula. Proin ut sodales augue, in convallis sapien. Mauris lacinia tempor dui, sed mattis mauris ultrices quis. Aliquam quis diam tristique, ultricies turpis ac, venenatis libero. Vivamus venenatis augue efficitur scelerisque fermentum. Vivamus viverra lorem et libero blandit tempor. Vestibulum pulvinar ante quis fringilla imperdiet. Suspendisse non arcu accumsan ipsum pharetra ornare vitae eget lacus.
+                </p>
+                <p>
+                Vivamus ultrices leo nec facilisis fermentum. In id nisl non lorem aliquet condimentum et id magna. Maecenas non volutpat justo, eget venenatis arcu. Sed convallis tellus at ipsum pretium venenatis. Quisque nibh neque, cursus eget leo in, porta dignissim ligula. Quisque tempus ex eu augue vehicula sodales. Pellentesque nisi lectus, luctus ut volutpat non, lacinia lacinia ligula.
+                </p>
+                <p>
+                Sed imperdiet vitae eros ut faucibus. Suspendisse porta vestibulum egestas. Donec dapibus est at arcu sodales, nec volutpat orci feugiat. Proin interdum pellentesque orci, ut sollicitudin nunc sagittis vitae. Sed ut finibus sem. Vivamus dolor tortor, imperdiet nec leo a, <img class="img-left" src="https://placekitten.com/g/120/80"/>condimentum mattis lectus. Praesent mollis, mauris non condimentum interdum, risus felis mattis eros, convallis semper libero eros quis lectus. Pellentesque quis fringilla quam, ac accumsan erat. Praesent ut facilisis metus. Duis ante est, finibus eu tellus laoreet, euismod eleifend odio. Nullam quis euismod turpis. Sed non massa vitae diam commodo feugiat ut sed felis. Sed quis nisl id nulla tincidunt cursus. Aliquam maximus arcu in condimentum malesuada. Donec tincidunt bibendum nisl, nec tempor massa porttitor in. Aliquam consequat vitae libero ut posuere.
+                </p>
+                <p>
+                Phasellus luctus mi vitae massa placerat imperdiet. Quisque imperdiet, nisl quis scelerisque volutpat, turpis turpis volutpat ligula, vitae imperdiet nisl elit id purus. Ut condimentum nibh eget malesuada vulputate. Morbi malesuada, metus eu scelerisque bibendum, lorem ligula eleifend eros, sed rhoncus augue tellus ut libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam iaculis sem purus, vel mollis tortor vestibulum in. Nunc pellentesque volutpat iaculis. Aenean viverra ultricies velit, eu pulvinar purus tincidunt sit amet.
+                </p>
+                <br/>
+                <br/>
+                <br/>
+                <div class="hero-img">
+                    <img src="https://placekitten.com/g/800/450"/>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Application JavaScript -->
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>

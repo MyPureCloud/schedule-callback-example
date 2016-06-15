@@ -1,0 +1,138 @@
+
+@import "widgets/scheduleCallbackWidget.css";
+
+html {
+    color: #222;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.app {
+    font-family: Lato, Arial, Sans-serif;
+    background-color: #fcfcfc;
+    color: #7d7d7d;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.header-nav-content {
+    width: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-nav-ctls-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-nav-ctls-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-nav-btn {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.header-nav-btn:hover {
+    background-color: #f0f0f0;
+    color: #707070;
+}
+
+.header-nav-callback-ctls {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Schedule Callback Open Dialog button */
+.sch-cbk-widget {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.sch-cbk-widget:hover {
+    background-color: #f0f0f0;
+    color: #707070;
+    cursor: pointer;
+}
+/* END Schedule Callback Open Dialog button */
+
+
+
+.header-logo {
+    background-color: #0e5470;
+    color: #fcfcfc;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.header-logo-content {
+    width: 1024px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.logo {
+}
+
+.logo-slogan {
+    margin-left: 60px;
+}
+
+
+.page-body {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    overflow-x: scroll;
+}
+
+.page-body-content {
+    width: 1024px;
+}
+
+
+
+.hero-img {
+    width: 100%;
+    text-align: center;
+}
+
+.img-left {
+    float: left;
+    padding: 15px;
+}
+
+.img-right {
+    float: right;
+    padding: 15px;
+}
