@@ -46,3 +46,7 @@ gulp start
 ```shell
 gulp
 ```
+
+## Demo
+
+![alt text](https://raw.githubusercontent.com/MyPureCloud/schedule-callback-example/master/demo.gif "Schedule Callback Example - Demo")
