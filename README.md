@@ -58,11 +58,11 @@ In order for this example to function properly, you'll need to create an OAuth2 
 
 First, you'll need to make sure your user has any roles that you want to provide to the application (you may need to create new roles for the app, but make sure you give yourself the role too).  The application needs roles in the same way a user does.  Once you have these roles, you'll need to login to PureCloud and navigate to
 
-> Admin -> Integrations -> OAuth2
+> Admin -> Integrations -> OAuth
 
 and click the "Add Client" Button.  Fill in the "App Name" and "Description" fields, and Under "Grant Types" select "Client Credentials".  Then under "Roles" add any roles you want to grant the application.  
 
-Upon saving you should see 2 new read-only fields "Client Id" and "Client Secret".  These string values will need to be placed in the file `schedule-callback-example/service/src/services/pureCloud/pureCloudAppLogin.js`.
+Upon saving you should see two new read-only fields appear: "Client Id" and "Client Secret".  These string values will need to be placed in the file `schedule-callback-example/service/src/services/pureCloud/pureCloudAppLogin.js`.
 
 
 ## Setting up the callback queue (and possibly scriptId).
